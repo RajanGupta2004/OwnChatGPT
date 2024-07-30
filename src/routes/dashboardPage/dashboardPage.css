@@ -1,0 +1,110 @@
+.dashBoardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid white; */
+}
+
+.dashboardtexts{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid green; */
+    margin-top: 20px;
+}
+
+.dashBoardTitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.dashBoardTitle h4{
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(to right, #217bfe, #e55571);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+.dashBoardTitle img{
+    width: 64px;
+    height: 64px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardItems{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.cardItems img{
+    width: 30px;
+    height: 30px;
+}
+
+.cardItems h3{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.formContainer{
+    margin-top: auto;
+    position: absolute;
+    bottom: 30px;
+    width: 60%;
+    border-radius: 20px;
+
+}
+
+.formContainer form{
+    background: rgb(62, 61, 61);
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.formContainer form input{
+    width: 90%;
+    /* height: 100%; */
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+}
+.formContainer form button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 3px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.formContainer form button img{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}

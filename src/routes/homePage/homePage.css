@@ -1,0 +1,158 @@
+.homepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+
+}
+
+.left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+
+ 
+}
+
+.hometitle{
+    font-size: 70px;
+    background: linear-gradient(to right, #217bfe, #e55571);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+
+.homedescription{
+    max-width: 70%;
+}
+
+.getStarted{
+    background: #217bfe;
+    font-size: 18px;
+    border-radius:100px;
+    padding: 13px;
+    margin-top: 10px;
+    &:hover{
+        background-color: white;
+        color: #217bfe;
+
+    }
+}
+
+
+.orbitalImage{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    animation: 100s linear infinite rotateOrbital;
+    z-index: -1;
+}
+
+@keyframes rotateOrbital{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #217bfe; */
+    /* border-radius: 50px; */
+    height: 40%;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bgContainer{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+    
+    
+}
+.bg{
+    background-image: url("/bg.png");
+    z-index: 1000;
+    width: 200%;
+    height: 100%;
+    object-fit: contain;
+    animation: 3s ease-in-out infinite alternate bganimation;
+    background-size: auto 100%;
+}
+
+
+.bot{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: 3s ease-in-out infinite alternate botAnimate;
+}
+
+
+.chats{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 6px;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    background-color: rgb(87, 78, 78);
+
+
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+}
+
+@keyframes botAnimate{
+    0%{
+        transform:scale(1) rotate(0deg) ;
+    }
+
+    100%{
+        transform:scale(1.1) rotate(-5deg);
+    }
+}
+@keyframes bganimation{
+    0%{
+        transform: translateX(0px);
+    }
+
+    100%{
+        transform: translateX(-50px);
+    }
+}
